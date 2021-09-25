@@ -1,0 +1,14 @@
+// SIN(X) and COS(X) approximations
+pi=180
+:x+=pi*(:x<-pi)-pi*(:x>pi) // Try to avoid needing to set bounds.
+i=:x/pi :sinx=4*i*(1-ABS i) // sin
+i=:x/pi i+=.5*(i>.5) :cosx1=4*i*(1-ABS i) // cos, using sin identity
+i=:x/pi :cosx2=i^2*(-6+4*ABS i)+1 // cos, separate derivation
+GOTO4
+
+
+
+
+
+
+
