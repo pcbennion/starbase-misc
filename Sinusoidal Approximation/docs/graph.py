@@ -25,7 +25,7 @@ cos_approx = pow(t2/180, 2)*(4*abs(t2/180) - 6) + 1
 fig2, ax2 = plt.subplots()
 ax2.plot(t2, cos, label="cos(x)")
 ax2.plot(t2, cos_approx, label="approx")
-ax2.plot(t2-90, sin_approx, label="sin approx at x+90")
+ax2.plot(t2-90, sin_approx, label="sin(x+90)")
 ax2.set(xlabel='x (deg)', ylabel='y',
         title='Cos vs Approximation')
 ax2.set_ybound(-1.1, 1.1)

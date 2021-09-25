@@ -1,5 +1,5 @@
 // ASIN(Y) and ACOS(Y) approximations
 u=40 v=50
-:asiny = u*:y^3+v*:y // output is between -90, 90
-:acosy = -u*:y^3-v*:y+90 // output is between 0, 180
+:asiny=u*:y^3+v*:y // output is between -90, 90
+:acosy=-u*:y^3-v*:y+90 // output is between 0, 180
 GOTO3
